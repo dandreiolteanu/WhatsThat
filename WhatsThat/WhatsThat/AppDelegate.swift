@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  WhatsThat
+//  whatsThat
 //
-//  Created by Mac on 03/08/2017.
-//  Copyright © 2017 Mac. All rights reserved.
+//  Created by Olteanu Andrei on 04/08/2017.
+//  Copyright © 2017 Olteanu Andrei. All rights reserved.
 //
 
 import UIKit

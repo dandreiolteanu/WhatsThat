@@ -1,15 +1,15 @@
 //
-//  WhatsThatTests.swift
-//  WhatsThatTests
+//  whatsThatTests.swift
+//  whatsThatTests
 //
-//  Created by Mac on 03/08/2017.
-//  Copyright © 2017 Mac. All rights reserved.
+//  Created by Olteanu Andrei on 04/08/2017.
+//  Copyright © 2017 Olteanu Andrei. All rights reserved.
 //
 
 import XCTest
-@testable import WhatsThat
+@testable import whatsThat
 
-class WhatsThatTests: XCTestCase {
+class whatsThatTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

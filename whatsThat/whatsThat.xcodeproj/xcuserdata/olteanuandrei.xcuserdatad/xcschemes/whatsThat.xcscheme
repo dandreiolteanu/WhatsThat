@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0484B3951F3338970090294A"
-               BuildableName = "WhatsThat.app"
-               BlueprintName = "WhatsThat"
-               ReferencedContainer = "container:WhatsThat.xcodeproj">
+               BlueprintIdentifier = "95EBCFF91F34F77700B76491"
+               BuildableName = "whatsThat.app"
+               BlueprintName = "whatsThat"
+               ReferencedContainer = "container:whatsThat.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,20 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0484B3A91F3338970090294A"
-               BuildableName = "WhatsThatTests.xctest"
-               BlueprintName = "WhatsThatTests"
-               ReferencedContainer = "container:WhatsThat.xcodeproj">
+               BlueprintIdentifier = "95EBD00D1F34F77800B76491"
+               BuildableName = "whatsThatTests.xctest"
+               BlueprintName = "whatsThatTests"
+               ReferencedContainer = "container:whatsThat.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "95EBD0181F34F77800B76491"
+               BuildableName = "whatsThatUITests.xctest"
+               BlueprintName = "whatsThatUITests"
+               ReferencedContainer = "container:whatsThat.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0484B3951F3338970090294A"
-            BuildableName = "WhatsThat.app"
-            BlueprintName = "WhatsThat"
-            ReferencedContainer = "container:WhatsThat.xcodeproj">
+            BlueprintIdentifier = "95EBCFF91F34F77700B76491"
+            BuildableName = "whatsThat.app"
+            BlueprintName = "whatsThat"
+            ReferencedContainer = "container:whatsThat.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0484B3951F3338970090294A"
-            BuildableName = "WhatsThat.app"
-            BlueprintName = "WhatsThat"
-            ReferencedContainer = "container:WhatsThat.xcodeproj">
+            BlueprintIdentifier = "95EBCFF91F34F77700B76491"
+            BuildableName = "whatsThat.app"
+            BlueprintName = "whatsThat"
+            ReferencedContainer = "container:whatsThat.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -84,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0484B3951F3338970090294A"
-            BuildableName = "WhatsThat.app"
-            BlueprintName = "WhatsThat"
-            ReferencedContainer = "container:WhatsThat.xcodeproj">
+            BlueprintIdentifier = "95EBCFF91F34F77700B76491"
+            BuildableName = "whatsThat.app"
+            BlueprintName = "whatsThat"
+            ReferencedContainer = "container:whatsThat.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
