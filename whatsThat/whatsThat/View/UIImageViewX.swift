@@ -12,9 +12,9 @@ class UIImageViewX: UIImageView {
     
     override func awakeFromNib() {
         
-        self.layer.shadowColor = UIColor.darkGray.cgColor
+        self.layer.shadowColor = UIColor.black.cgColor
         self.layer.shadowRadius = 15
-        self.layer.shadowOpacity = 0.75
+        self.layer.shadowOpacity = 0.65
     }
     
     @IBInspectable var cornerRadius: CGFloat = 30.0 {
