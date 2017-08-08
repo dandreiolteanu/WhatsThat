@@ -29,14 +29,14 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rtj-mb-kB1" customClass="UIViewX" customModule="whatsThat" customModuleProvider="target">
-                                <rect key="frame" x="18" y="35" width="339" height="94"/>
+                                <rect key="frame" x="18" y="35" width="339" height="90"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="94" id="3rJ-DP-uef"/>
+                                    <constraint firstAttribute="height" constant="90" id="3rJ-DP-uef"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="47"/>
+                                        <real key="value" value="45"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
                                         <color key="value" red="0.30546313524246216" green="0.63300967216491699" blue="0.90200883150100708" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -48,7 +48,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xEg-7Q-2Ch">
-                                <rect key="frame" x="57" y="31" width="261.5" height="102"/>
+                                <rect key="frame" x="57" y="29" width="261.5" height="102"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wFf-Gf-faa">
                                         <rect key="frame" x="0.0" y="0.0" width="261.5" height="102"/>
@@ -120,10 +120,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Llw-Le-vyx" customClass="UIImageViewX" customModule="whatsThat" customModuleProvider="target">
-                                <rect key="frame" x="268" y="519" width="91" height="128"/>
+                                <rect key="frame" x="248" y="499" width="111" height="148"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="7K2-Kn-BRR"/>
-                                    <constraint firstAttribute="width" constant="91" id="HfL-EK-nOX"/>
+                                    <constraint firstAttribute="height" constant="148" id="7K2-Kn-BRR"/>
+                                    <constraint firstAttribute="width" constant="111" id="HfL-EK-nOX"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -132,11 +132,11 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZm-zU-W0s" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
-                                <rect key="frame" x="293.5" y="563.5" width="40" height="40"/>
+                                <rect key="frame" x="273.5" y="543.5" width="60" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="Vd1-t8-jNm"/>
-                                    <constraint firstAttribute="height" constant="40" id="fVb-yG-gYT"/>
+                                    <constraint firstAttribute="width" constant="60" id="Vd1-t8-jNm"/>
+                                    <constraint firstAttribute="height" constant="60" id="fVb-yG-gYT"/>
                                 </constraints>
                             </view>
                         </subviews>

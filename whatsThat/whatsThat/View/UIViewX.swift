@@ -15,6 +15,7 @@ class UIViewX: UIView {
         self.layer.shadowColor = UIColor.black.cgColor
         self.layer.shadowRadius = 15
         self.layer.shadowOpacity = 0.65
+//        self.layer.cornerRadius = self.frame.height / 2
     }
     
     @IBInspectable var cornerRadius: CGFloat = 30.0 {

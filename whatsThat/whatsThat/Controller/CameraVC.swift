@@ -44,10 +44,14 @@ class CameraVC: UIViewController {
     
     @IBOutlet weak var headerView: UIViewX!
     var colorArray: [(color1: UIColor, color2: UIColor)] = []
-    var flashONColorArray: [(color1: UIColor, color2: UIColor)] = []
-    var currentFlashONColorArrayIndex = -1
     var currentColorArrayIndex = -1
     
+    var colorArrayFlashON: [(color1: UIColor, color2: UIColor)] = []
+    var currentFlashONColorArrayIndex = -1
+    
+    var colorArrayFlashOFF: [(color1: UIColor, color2: UIColor)] = []
+    var currentFlashOFFColorArrayIndex = -1
+
     
     
     override func viewDidLoad() {
@@ -57,24 +61,44 @@ class CameraVC: UIViewController {
         
         // COLORS FOR THE ANIMATION
         colorArray.append((color1: #colorLiteral(red: 0.2591436505, green: 0.6219938397, blue: 0.8805219531, alpha: 1) , color2: #colorLiteral(red: 0.4490969181, green: 0.7435027957, blue: 0.804695785, alpha: 1)))
-        colorArray.append((color1: #colorLiteral(red: 0.4490969181, green: 0.7435027957, blue: 0.804695785, alpha: 1) , color2: #colorLiteral(red: 0.5791940689, green: 0.1280144453, blue: 0.5726861358, alpha: 1)))
-        colorArray.append((color1: #colorLiteral(red: 0.5791940689, green: 0.1280144453, blue: 0.5726861358, alpha: 1) , color2: #colorLiteral(red: 0.5110332966, green: 0.2250769734, blue: 0.5661664605, alpha: 1)))
-        colorArray.append((color1: #colorLiteral(red: 0.5110332966, green: 0.2250769734, blue: 0.5661664605, alpha: 1) , color2: #colorLiteral(red: 0.3763405979, green: 0.3311273456, blue: 0.6556733251, alpha: 1)))
-        colorArray.append((color1: #colorLiteral(red: 0.3763405979, green: 0.3311273456, blue: 0.6556733251, alpha: 1) , color2: #colorLiteral(red: 0.2509262264, green: 0.4745180011, blue: 0.7170872092, alpha: 1)))
+        colorArray.append((color1: #colorLiteral(red: 0.4490969181, green: 0.7435027957, blue: 0.804695785, alpha: 1) , color2: #colorLiteral(red: 0.2834140658, green: 0.3753284812, blue: 1, alpha: 1)))
+        colorArray.append((color1: #colorLiteral(red: 0.2808943391, green: 0.3773900867, blue: 1, alpha: 1) , color2: #colorLiteral(red: 0, green: 0.5921684504, blue: 1, alpha: 1)))
+        colorArray.append((color1: #colorLiteral(red: 0, green: 0.5912120938, blue: 0.9986155629, alpha: 1) , color2: #colorLiteral(red: 0.7379384637, green: 0.526999712, blue: 0.9968449473, alpha: 1)))
+        colorArray.append((color1: #colorLiteral(red: 0.7365908027, green: 0.5287910104, blue: 0.9967978597, alpha: 1) , color2: #colorLiteral(red: 0.9972050786, green: 0.1419899464, blue: 0.8185440898, alpha: 1)))
+        colorArray.append((color1: #colorLiteral(red: 0.9972050786, green: 0.1419899464, blue: 0.8185440898, alpha: 1) , color2: #colorLiteral(red: 1, green: 0.4325678945, blue: 0.586425364, alpha: 1)))
+        colorArray.append((color1: #colorLiteral(red: 0.9993091226, green: 0.4343143404, blue: 0.5869914293, alpha: 1) , color2: #colorLiteral(red: 1, green: 0.6235074401, blue: 0.3715840578, alpha: 1)))
+        colorArray.append((color1: #colorLiteral(red: 0.9977305532, green: 0.6254910231, blue: 0.3733866215, alpha: 1) , color2: #colorLiteral(red: 0.555644393, green: 0.751979053, blue: 0.6523420215, alpha: 1)))
+        colorArray.append((color1: #colorLiteral(red: 0.555644393, green: 0.751979053, blue: 0.6523420215, alpha: 1) , color2: #colorLiteral(red: 0.03810773417, green: 0.6029273272, blue: 0.8819715381, alpha: 1)))
+
         animateHeaderView()
+        
+//        colorArrayFlashON.append((color1: #colorLiteral(red: 0.2591436505, green: 0.6219938397, blue: 0.8805219531, alpha: 1) , color2: #colorLiteral(red: 0.4490969181, green: 0.7435027957, blue: 0.804695785, alpha: 1)))
+//        colorArrayFlashON.append((color1: #colorLiteral(red: 0.4490969181, green: 0.7435027957, blue: 0.804695785, alpha: 1) , color2: #colorLiteral(red: 0.2834140658, green: 0.3753284812, blue: 1, alpha: 1)))
+//        colorArrayFlashON.append((color1: #colorLiteral(red: 0.2808943391, green: 0.3773900867, blue: 1, alpha: 1) , color2: #colorLiteral(red: 0, green: 0.5921684504, blue: 1, alpha: 1)))
+//
+//        colorArrayFlashOFF.append((color1: #colorLiteral(red: 0, green: 0.5912120938, blue: 0.9986155629, alpha: 1) , color2: #colorLiteral(red: 0.9972050786, green: 0.1419899464, blue: 0.8185440898, alpha: 1)))
+//        colorArrayFlashOFF.append((color1: #colorLiteral(red: 0.9972050786, green: 0.1419899464, blue: 0.8185440898, alpha: 1) , color2: #colorLiteral(red: 1, green: 0.4325678945, blue: 0.586425364, alpha: 1)))
+//        colorArrayFlashOFF.append((color1: #colorLiteral(red: 0.9993091226, green: 0.4343143404, blue: 0.5869914293, alpha: 1) , color2: #colorLiteral(red: 1, green: 0.6235074401, blue: 0.3715840578, alpha: 1)))
+//        colorArrayFlashOFF.append((color1: #colorLiteral(red: 1, green: 0.6235074401, blue: 0.3715840578, alpha: 1) , color2: #colorLiteral(red: 0.03810773417, green: 0.6029273272, blue: 0.8819715381, alpha: 1)))
         
         confidenceLbl.countFrom(fromValue: 50, to: 0, withDuration: 2, andAnimationType: .EaseOut, andCountingType: .Int)
         
         spinner.type = NVActivityIndicatorType.ballGridPulse
     }
-    /*
-     *    // ANIMATING THE HEADER VIEW
+    
+    
+    /*              ##########################################
+     *
+     *              // FUNCTIONS FOR ANIMATING THE HEADER VIEW
+     *
+     *              ###########################################
      */
+    
     
     func animateHeaderView() {
         currentColorArrayIndex = currentColorArrayIndex == (colorArray.count - 1) ? 0 : currentColorArrayIndex + 1
         // SETTING THE DURATION OF THE ANIMATION FROM HERE
-        UIView.transition(with: headerView, duration: 7, options: [.transitionCrossDissolve], animations: {
+        UIView.transition(with: headerView, duration: 6, options: [.transitionCrossDissolve], animations: {
             
             self.headerView.firstColor = self.colorArray[self.currentColorArrayIndex].color1
             self.headerView.secondColor = self.colorArray[self.currentColorArrayIndex].color2
@@ -83,6 +107,41 @@ class CameraVC: UIViewController {
             self.animateHeaderView()
         }
     }
+    
+    func animateHeaderViewFlashON() {
+        currentFlashONColorArrayIndex = currentFlashONColorArrayIndex == (colorArrayFlashON.count - 1) ? 0 : currentFlashONColorArrayIndex + 1
+        // SETTING THE DURATION OF THE ANIMATION FROM HERE
+        UIView.transition(with: headerView, duration: 2, options: [.transitionCrossDissolve], animations: {
+            
+            self.headerView.firstColor = self.colorArrayFlashON[self.currentFlashONColorArrayIndex].color1
+            self.headerView.secondColor = self.colorArrayFlashON[self.currentFlashONColorArrayIndex].color2
+            
+        }) { (success) in
+            self.animateHeaderViewFlashON()
+        }
+    }
+    
+    func animateHeaderViewFlashOFF() {
+        currentFlashOFFColorArrayIndex = currentFlashOFFColorArrayIndex == (colorArrayFlashOFF.count - 1) ? 0 : currentFlashOFFColorArrayIndex + 1
+        // SETTING THE DURATION OF THE ANIMATION FROM HERE
+        UIView.transition(with: headerView, duration: 2, options: [.transitionCrossDissolve], animations: {
+            
+            self.headerView.firstColor = self.colorArrayFlashOFF[self.currentFlashOFFColorArrayIndex].color1
+            self.headerView.secondColor = self.colorArrayFlashOFF[self.currentFlashOFFColorArrayIndex].color2
+            
+        }) { (success) in
+            self.animateHeaderViewFlashOFF()
+        }
+    }
+    
+    
+    /*              ###################################################
+     *
+     *              // FINISHED FUNCTIONS FOR ANIMATING THE HEADER VIEW
+     *
+     *              ###################################################
+     */
+    
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
@@ -191,10 +250,12 @@ class CameraVC: UIViewController {
         
         switch flashControlState {
         case .off:
+//            self.animateHeaderViewFlashOFF()
             self.flashBtn.setImage(UIImage(named: "flashON"), for: .normal)
             self.flashBtnLbl.text = "ON"
             flashControlState = .on
         case .on:
+//            self.animateHeaderViewFlashON()
             self.flashBtn.setImage(UIImage(named: "flashOFF"), for: .normal)
             self.flashBtnLbl.text = "OFF"
             flashControlState = .off
